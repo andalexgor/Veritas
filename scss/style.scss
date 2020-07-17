@@ -1,0 +1,147 @@
+:root{
+    --main-color-text:#49423E;
+}
+
+*{
+   color: var(--main-color-text);
+   font-family: sans-serif;
+}
+
+.wrapper{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100%;
+}
+.header{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: red;
+
+    .company-logo{
+        display: flex;
+        align-items: center;
+        max-width: 420px;
+        width: 100%;
+        justify-content: space-between;
+
+        .separator-line{ 
+            content: "";
+            height: 42px;
+            width: 1px;
+            background-color: var(--main-color-text);
+        }
+    }
+
+    .company-contact {
+        display: flex;
+        align-items: center;
+        
+
+        address{
+            display: flex;  
+            flex-direction:column;
+            font-style: normal;
+
+
+            a{
+                display: flex;
+                margin: 5px 0;
+                text-decoration: none;
+                color: var(--main-color-text);
+                flex-wrap: nowrap;
+                font-size: 17px;
+                line-height: 20px;
+                align-items: center;
+                
+                
+
+                i{
+                    color: #0F0E0E;
+                    padding: 0 5px;
+                    
+                }
+            }
+            a:last-child{
+                color: #0F0E0E;
+            }
+            
+        }
+
+    }
+}
+
+.main-header{
+    height: 800px;
+    background: no-repeat url(../img/bg-1.png);
+    background-position: bottom;
+    background-size: 100%;
+
+
+    .main-header__content{
+        position: relative;
+        top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 66%;
+        margin: 0 auto;
+
+        h1{
+            text-align: center;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 34px;
+            line-height: 40px;
+            margin: 0;
+        }
+
+        .our-pluses{
+            margin: 45px 0 50px 0;
+        }
+    }
+
+    .transparent-button{
+        background: none;
+        border: 1px solid #B1181E;
+        width: 230px;
+        height: 50px;
+        color: #B1181E;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.our-pluses{
+    display: flex;
+
+    .first__plus ,.second__plus ,.third__plus{
+        
+        width: 33%;
+        margin: 0 5px;
+        flex-wrap: nowrap;
+
+        h3{
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            color: #F8AE43;
+            margin: 0;
+            
+        }
+        p{
+            margin: 0;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+}

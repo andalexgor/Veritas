@@ -1,0 +1,179 @@
+:root {
+  --main-color-text:#49423E;
+}
+
+* {
+  color: var(--main-color-text);
+  font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header {
+  max-width: 1440px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: red;
+}
+
+.header .company-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 420px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .company-logo .separator-line {
+  content: "";
+  height: 42px;
+  width: 1px;
+  background-color: var(--main-color-text);
+}
+
+.header .company-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .company-contact address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-style: normal;
+}
+
+.header .company-contact address a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0;
+  text-decoration: none;
+  color: var(--main-color-text);
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 17px;
+  line-height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .company-contact address a i {
+  color: #0F0E0E;
+  padding: 0 5px;
+}
+
+.header .company-contact address a:last-child {
+  color: #0F0E0E;
+}
+
+.main-header {
+  height: 800px;
+  background: no-repeat url(../img/bg-1.png);
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.main-header .main-header__content {
+  position: relative;
+  top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 66%;
+  margin: 0 auto;
+}
+
+.main-header .main-header__content h1 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 34px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.main-header .main-header__content .our-pluses {
+  margin: 45px 0 50px 0;
+}
+
+.main-header .transparent-button {
+  background: none;
+  border: 1px solid #B1181E;
+  width: 230px;
+  height: 50px;
+  color: #B1181E;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.our-pluses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.our-pluses .first__plus, .our-pluses .second__plus, .our-pluses .third__plus {
+  width: 33%;
+  margin: 0 5px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.our-pluses .first__plus h3, .our-pluses .second__plus h3, .our-pluses .third__plus h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #F8AE43;
+  margin: 0;
+}
+
+.our-pluses .first__plus p, .our-pluses .second__plus p, .our-pluses .third__plus p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+}
+/*# sourceMappingURL=style.css.map */
